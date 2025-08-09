@@ -1,8 +1,9 @@
 tasks:
   - init: |
-      echo "Ambiente pronto."
+      wget https://github.com/getzola/zola/releases/download/v0.21.0/zola-v0.21.0-x86_64-unknown-linux-gnu.tar.gz
+      tar -xvzf zola-v0.21.0-x86_64-unknown-linux-gnu.tar.gz
+      sudo mv zola /usr/local/bin/
     command: |
-      echo "Iniciando Zola..."
       zola serve --interface 0.0.0.0 --port 3000
 
 ports:
