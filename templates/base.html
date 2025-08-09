@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.extra.author }}</title>
+    <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+</head>
+<body>
+<header>
+    <h1><a href="{{ config.base_url }}">{{ config.extra.author }}</a></h1>
+    <nav>
+        <a href="/">Início</a> |
+        <a href="{{ config.extra.github }}">GitHub</a> |
+        <a href="{{ config.extra.linkedin }}">LinkedIn</a>
+    </nav>
+</header>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    <p>Feito por {{ config.extra.author }} — <a href="{{ config.extra.github }}">@Claitonr</a></p>
+</footer>
+</body>
+</html>

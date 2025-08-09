@@ -1,0 +1,17 @@
+# The URL the site will be built for
+base_url = "https://claiton.cc"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+highlight_code = true
+
+[extra]
+author = "Claiton Roberto"
+github = "https://github.com/Claitonr"
+linkedin = "https://www.linkedin.com/in/claiton-roberto-5812a39b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
